@@ -66,13 +66,13 @@
     nums.forEach(n=>io.observe(n));
 
     // Smooth in-view animations for sections
-    const reveals = document.querySelectorAll('.section, .hero-copy, .profile-card, .project-card, .tl-item');
+    const reveals = document.querySelectorAll('.section, .hero-copy, .profile-card, .project-card, .tl-item, .timeline-card');
     const io2 = new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:0.12});
     reveals.forEach(r=>io2.observe(r));
 
     // Contact form submission
     const form = document.getElementById('contact-form');
-    if(form){form.addEventListener('submit',async(e)=>{e.preventDefault();const status=form.querySelector('.form-status');status.textContent='Sending...';const action=form.getAttribute('action');const fd=new FormData(form);try{const res=await fetch(action,{method:'POST',body:fd,headers:{'Accept':'application/json'}});if(res.ok){status.textContent='Thanks — I will get back to you soon.';form.reset()}else{const data=await res.json();status.textContent=data.error||'Submission error'}}catch(err){status.textContent='Network error — try hello@example.com'}})}
+    if(form){form.addEventListener('submit',async(e)=>{e.preventDefault();const status=form.querySelector('.form-status');status.textContent='Sending...';const action=form.getAttribute('action');const fd=new FormData(form);try{const res=await fetch(action,{method:'POST',body:fd,headers:{'Accept':'application/json'}});if(res.ok){status.textContent='Thanks — I will get back to you soon.';form.reset()}else{const data=await res.json();status.textContent=data.error||'Submission error'}}catch(err){status.textContent='Network error — try pranalithorve@gmail.com'}})}
 
     // Lazy loading images - if any
     if('loading' in HTMLImageElement.prototype){const imgs=document.querySelectorAll('img[loading="lazy"]');imgs.forEach(i=>{});} // placeholder

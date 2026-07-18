@@ -1,25 +1,12 @@
-# Premium Portfolio for Pranali Thorve
+Updated Professional Experience timeline and replaced contact email with pranalithorve@gmail.com.
 
-This branch adds a premium, production-ready static portfolio for Pranali Thorve with:
+Files updated:
+- index.html (experience section replaced with premium animated timeline for Cemtics/NEC)
+- js/premium.js (contact fallback email updated)
+- img/logos/cemtics.svg, img/logos/nec.svg (logo placeholders)
+- robots.txt, sitemap.xml (re-written to ensure latest)
 
-- Premium UI inspired by Apple/Linear/Vercel/Stripe
-- Dark mode by default, glassmorphism, aurora gradient, particles
-- Animated typing, counters, timeline, smooth scrolling, progress bar
-- SEO meta tags, structured data, sitemap and robots.txt
-- Lazy loading, accessibility improvements
-
-Files added/updated:
-- index.html
-- css/premium.css
-- js/premium.js
-- robots.txt
-- sitemap.xml
-
-Notes:
-- Replace the contact form action with your Formspree or server endpoint.
-- Add resume.pdf at repository root to enable resume download.
-- Update any personal links (LinkedIn, GitHub) if necessary.
-
-To create a pull request:
-https://github.com/pranalithorve/pranalithorve.github.io/compare/premium-portfolio?expand=1
+Next steps:
+- Add resume.pdf at repo root to enable resume download.
+- Update the Formspree action in the contact form.
 
