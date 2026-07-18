@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360" role="img" aria-label="AI media illustration">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#5fb6ff"/><stop offset="1" stop-color="#7df4c6"/></linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="#07121a"/>
+  <g transform="translate(40,40)" fill="#e8fbff" opacity="0.95">
+    <rect x="0" y="0" width="520" height="80" rx="8" fill="url(#g2)"/>
+    <text x="12" y="48" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#071018">AI Media Pipeline</text>
+    <circle cx="80" cy="160" r="40" fill="url(#g2)"/>
+    <circle cx="240" cy="160" r="24" fill="#0b1220"/>
+  </g>
+</svg>
