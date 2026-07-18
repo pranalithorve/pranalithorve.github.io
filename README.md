@@ -1,8 +1,3 @@
-Updated contact email to pranalithorve@gmail.com and LinkedIn URL to https://www.linkedin.com/in/pranali-thorve-800824184/ across the site.
-
-Files updated:
-- index.html (contact links, structured data, footer)
-- js/premium.js (contact fallback message)
-- README.md (note updated)
+Updated contact details, refined copy for hero, about, skills, experience, projects and added Technical Expertise section. Improved accessibility, active nav highlighting, copy-email functionality, refined CSS spacing and animations.
 
 Committed to branch: premium-portfolio

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360" role="img" aria-label="Retail illustration">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#5fb6ff"/></linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="#08121a"/>
+  <g transform="translate(40,40)" fill="#dfeeff" opacity="0.95">
+    <rect x="0" y="0" width="140" height="80" rx="8" fill="url(#g3)"/>
+    <rect x="180" y="0" width="140" height="80" rx="8" fill="#0b1220"/>
+    <text x="12" y="48" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#071018">Orders</text>
+    <text x="192" y="48" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#dfeeff">Inventory</text>
+  </g>
+</svg>

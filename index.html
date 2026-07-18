@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pranali Thorve — Senior Python Backend Developer</title>
-  <meta name="description" content="Pranali Thorve — Senior Python Backend Developer. Scalable backend systems, REST APIs, cloud-native apps and AI integrations." />
+  <title>Pranali Thorve | Senior Python Backend Engineer</title>
+  <meta name="description" content="Senior Python Backend Engineer with 7+ years of experience in FastAPI, Django, Flask, AWS, Docker, Microservices, PostgreSQL, and AI Integration." />
   <meta name="author" content="Pranali Thorve" />
-  <meta property="og:title" content="Pranali Thorve — Senior Python Backend Developer" />
-  <meta property="og:description" content="Experienced Python Backend Developer building scalable systems, APIs, cloud-native apps and AI-powered solutions." />
+  <meta property="og:title" content="Pranali Thorve | Senior Python Backend Engineer" />
+  <meta property="og:description" content="Senior Python Backend Engineer building scalable backend systems, REST APIs, microservices, cloud-native applications and AI integrations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pranalithorve.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -21,10 +21,10 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Pranali Thorve",
-    "jobTitle": "Senior Python Backend Developer",
+    "jobTitle": "Senior Python Backend Engineer",
     "url": "https://pranalithorve.github.io/",
     "sameAs": ["https://github.com/pranalithorve","https://www.linkedin.com/in/pranali-thorve-800824184/"],
-    "description": "Experienced Python Backend Developer building scalable systems, APIs, cloud-native apps and AI-powered solutions."
+    "description": "Senior Python Backend Engineer with 7+ years of experience building scalable backend systems, REST APIs, microservices, cloud-native applications and AI-powered solutions."
   }
   </script>
   <meta name="theme-color" content="#071018">
@@ -36,17 +36,18 @@
 
   <div id="progress-bar" aria-hidden="true"></div>
 
-  <header class="topbar">
+  <header class="topbar" role="banner">
     <div class="inner">
       <a class="brand" href="#hero">Pranali Thorve</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" role="navigation" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="controls">
+        <a class="btn ghost" href="/resume.pdf" download aria-label="Download resume">Resume</a>
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
         <button id="scroll-top" aria-label="Scroll to top">⬆</button>
       </div>
@@ -54,29 +55,32 @@
   </header>
 
   <main>
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
       <div class="aurora" aria-hidden="true"></div>
       <canvas id="particles" aria-hidden="true"></canvas>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Senior Python Backend Developer</p>
-          <h1 class="headline">Hi, I'm <span class="name">Pranali Thorve</span></h1>
-          <h2 class="subhead">Senior Python Backend Developer | Backend Architecture | Cloud | AI</h2>
+          <p class="eyebrow">Building Scalable Backend Systems for Enterprise Applications</p>
+          <h1 id="hero-heading" class="headline">Hi, I'm <span class="name">Pranali Thorve</span></h1>
+          <h2 class="subhead">Senior Python Backend Engineer — Mumbai, India</h2>
 
           <div class="typed" aria-hidden="true"><span id="typed-text"></span><span class="cursor">|</span></div>
 
-          <p class="lead">Experienced backend engineer building scalable backend systems, REST APIs, cloud-native applications, and AI-powered solutions. Passionate about clean architecture, performance optimization and distributed systems.</p>
+          <p class="lead">Python Backend Engineer with 7+ years of experience building scalable REST APIs, microservices, cloud-native applications, distributed systems, and AI-powered backend solutions. Currently developing enterprise telecom backend services for the RFDS platform used by T-Mobile through Cemtics Solutions.</p>
 
           <div class="cta">
             <a class="btn primary" href="/resume.pdf" download>Download Resume</a>
             <a class="btn outline" href="#projects">View Projects</a>
+            <a class="btn outline" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn outline" href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="btn ghost" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-card" aria-hidden="true">
+        <aside class="hero-card" aria-labelledby="profile-name">
           <div class="profile-card">
-            <div class="avatar" id="avatar">
+            <div class="avatar" id="avatar" aria-hidden="true">
+              <!-- Animated gradient avatar square -->
               <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile placeholder">
                 <defs>
                   <linearGradient id="grad" x1="0" x2="1">
@@ -92,26 +96,47 @@
               </svg>
             </div>
             <div class="profile-meta">
-              <h3>Pranali Thorve</h3>
-              <p>Senior Python Backend Developer</p>
-              <div class="badges">
-                <span>7+ yrs</span>
-                <span>Python</span>
-                <span>Cloud</span>
+              <h3 id="profile-name">Pranali Thorve</h3>
+              <p class="muted">Senior Python Backend Engineer</p>
+
+              <ul class="profile-stats">
+                <li>📍 Mumbai, India</li>
+                <li>🏢 Cemtics Solutions</li>
+                <li>Client: T-Mobile</li>
+                <li>Experience: 7+ years</li>
+              </ul>
+
+              <div class="expertise">
+                <h4>Core Expertise</h4>
+                <div class="chips">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>Microservices</span>
+                  <span>AWS</span>
+                  <span>AI Integration</span>
+                </div>
               </div>
+
+              <div class="profile-actions">
+                <button id="copy-email" class="btn small outline" aria-label="Copy email">Copy Email</button>
+                <a class="btn small" href="/resume.pdf" download>Download Resume</a>
+              </div>
+
             </div>
           </div>
-        </div>
+        </aside>
+
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section id="about" class="section about" aria-labelledby="about-title">
       <div class="container">
-        <h3 class="section-title">About Me</h3>
+        <h3 id="about-title" class="section-title">About Me</h3>
         <div class="about-grid">
           <div class="about-copy">
-            <p>I'm a backend engineer passionate about building scalable software, cloud infrastructure, reliable APIs, distributed systems, and AI integrations. I design systems for reliability, maintainability and performance, and I enjoy mentoring teams and solving hard problems.</p>
-            <p>My work focuses on clean architecture, observability, pragmatic testing, and delivering value quickly while keeping systems robust.</p>
+            <p>I am a Senior Python Backend Engineer with over seven years of experience designing scalable backend systems, cloud-native applications, REST APIs, microservices, distributed systems, and AI-powered solutions.</p>
+            <p>Currently, I work on the RFDS platform for T-Mobile through Cemtics Solutions, developing enterprise-grade backend APIs and microservices that support telecom network planning and management.</p>
+            <p>I enjoy solving complex backend challenges, improving application performance, designing clean architectures, and building reliable production systems that are scalable and maintainable.</p>
           </div>
           <div class="about-stats">
             <div class="stat">
@@ -119,29 +144,30 @@
               <p>Years Experience</p>
             </div>
             <div class="stat">
-              <h4 class="num" data-target="100">0</h4>
-              <p>APIs Built</p>
+              <h4 class="num" data-target="0">0</h4>
+              <p>Enterprise Telecom Projects</p>
             </div>
             <div class="stat">
-              <h4 class="num" data-target="50">0</h4>
-              <p>Backend Services</p>
+              <h4 class="num" data-target="0">0</h4>
+              <p>Cloud Native Development</p>
             </div>
             <div class="stat">
-              <h4 class="num" data-target="1000000">0</h4>
-              <p>Records Processed</p>
+              <h4 class="num" data-target="0">0</h4>
+              <p>AI Integration</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section skills">
+    <section id="skills" class="section skills" aria-labelledby="skills-title">
       <div class="container">
-        <h3 class="section-title">Skills</h3>
+        <h3 id="skills-title" class="section-title">Skills</h3>
         <div class="skills-grid">
+          <!-- Keep UI and categories, improve spacing and add new chips -->
           <div class="skill-group">
             <h4>Languages</h4>
-            <div class="chips"><span>Python</span><span>SQL</span></div>
+            <div class="chips"><span>Python</span><span>SQL</span><span>Linux</span></div>
           </div>
 
           <div class="skill-group">
@@ -151,7 +177,7 @@
 
           <div class="skill-group">
             <h4>Backend</h4>
-            <div class="chips"><span>REST APIs</span><span>Microservices</span><span>Auth</span><span>Async</span></div>
+            <div class="chips"><span>REST APIs</span><span>Microservices</span><span>Authentication</span><span>Async Programming</span></div>
           </div>
 
           <div class="skill-group">
@@ -166,17 +192,17 @@
 
           <div class="skill-group">
             <h4>DevOps</h4>
-            <div class="chips"><span>Docker</span><span>Jenkins</span></div>
+            <div class="chips"><span>Docker</span><span>Jenkins</span><span>CI/CD</span></div>
           </div>
 
           <div class="skill-group">
             <h4>Messaging</h4>
-            <div class="chips"><span>Kafka</span><span>SQS</span></div>
+            <div class="chips"><span>Kafka</span><span>Amazon SQS</span></div>
           </div>
 
           <div class="skill-group">
-            <h4>Tools</h4>
-            <div class="chips"><span>Git</span><span>GitHub</span></div>
+            <h4>Tools & Design</h4>
+            <div class="chips"><span>Git</span><span>GitHub</span><span>OpenAPI / Swagger</span><span>System Design</span></div>
           </div>
 
           <div class="skill-group">
@@ -187,9 +213,9 @@
       </div>
     </section>
 
-    <section id="experience" class="section experience">
+    <section id="experience" class="section experience" aria-labelledby="exp-title">
       <div class="container">
-        <h3 class="section-title">Professional Experience</h3>
+        <h3 id="exp-title" class="section-title">Professional Experience</h3>
 
         <div class="vertical-timeline">
 
@@ -198,44 +224,30 @@
             <div class="logo-wrap"><img src="/img/logos/cemtics.svg" alt="Cemtics Solutions logo"></div>
             <div class="card-body">
               <header class="card-header">
-                <h4>Senior Python Backend Developer</h4>
+                <h4>Senior Python Backend Engineer</h4>
                 <span class="meta">Cemtics Solutions Pvt. Ltd. — 2025 – Present</span>
               </header>
 
               <p class="meta small"><strong>Client:</strong> T-Mobile</p>
               <p class="project"><strong>Project:</strong> RFDS (Radio Frequency Design System)</p>
 
-              <p class="role-summary">Working as a Senior Python Backend Developer for T-Mobile through Cemtics, developing scalable backend APIs and microservices for the RFDS design software used in telecommunications network planning and management.</p>
+              <p class="role-summary">Developing scalable backend APIs and microservices for enterprise telecom software used for radio frequency network planning and management.</p>
 
               <div class="badges tech">
-                <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Microservices</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Git</span><span>GitHub</span>
+                <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Microservices</span><span>Docker</span><span>AWS</span><span>PostgreSQL</span><span>Git</span>
               </div>
 
               <details class="responsibilities">
                 <summary>Responsibilities</summary>
                 <ul>
-                  <li>Design, develop and maintain scalable backend APIs using Python and FastAPI.</li>
-                  <li>Develop and enhance microservices for the RFDS application.</li>
-                  <li>Build high-performance REST APIs for enterprise applications.</li>
-                  <li>Design clean and maintainable backend architecture.</li>
-                  <li>Optimize API performance and database queries.</li>
-                  <li>Collaborate with frontend developers, QA engineers, solution architects and product owners.</li>
-                  <li>Participate in sprint planning, grooming sessions, code reviews and Agile ceremonies.</li>
-                  <li>Debug and resolve production issues.</li>
-                  <li>Write clean, reusable and well-tested code.</li>
-                  <li>Contribute to system design discussions and technical improvements.</li>
+                  <li>Develop scalable REST APIs and backend services.</li>
+                  <li>Design and implement backend microservices with robust error handling and observability.</li>
+                  <li>Improve backend performance and maintainability; optimize PostgreSQL queries.</li>
+                  <li>Collaborate closely with cross-functional Agile teams, product owners and architects.</li>
+                  <li>Write production-ready code with tests and participate in code reviews.</li>
                 </ul>
               </details>
 
-              <div class="achievements">
-                <h5>Achievements</h5>
-                <ul>
-                  <li>Developed scalable backend APIs for enterprise telecom software.</li>
-                  <li>Contributed to microservice-based architecture.</li>
-                  <li>Improved API maintainability and performance.</li>
-                  <li>Delivered high-quality features in an Agile environment.</li>
-                </ul>
-              </div>
             </div>
           </article>
 
@@ -248,47 +260,22 @@
                 <span class="meta">NEC Software Solutions — Nov 2017 – Mar 2025</span>
               </header>
 
-              <p class="role-summary">Worked as a Python Backend Developer building enterprise-grade backend applications, REST APIs, microservices and AI-powered solutions across multiple business domains.</p>
+              <p class="role-summary">Developed enterprise-grade backend applications, REST APIs, cloud-native services, and AI integrations across multiple business domains.</p>
 
               <div class="badges tech">
-                <span>Python</span><span>FastAPI</span><span>Flask</span><span>Django</span><span>REST APIs</span><span>Microservices</span><span>Kafka</span><span>AWS SQS</span><span>Redis</span><span>PostgreSQL</span><span>MongoDB</span><span>Elasticsearch</span><span>Docker</span><span>Jenkins</span><span>AWS</span><span>Git</span><span>OpenAI</span>
+                <span>Python</span><span>FastAPI</span><span>Flask</span><span>Django</span><span>Kafka</span><span>Redis</span><span>PostgreSQL</span><span>MongoDB</span>
               </div>
 
               <details class="responsibilities">
                 <summary>Responsibilities</summary>
                 <ul>
-                  <li>Designed and developed backend applications using Python.</li>
-                  <li>Built REST APIs using FastAPI, Flask and Django.</li>
-                  <li>Developed scalable microservices.</li>
-                  <li>Built backend services for a Retail POS platform.</li>
-                  <li>Integrated OpenAI APIs into enterprise applications.</li>
-                  <li>Worked with Kafka and AWS SQS messaging.</li>
-                  <li>Developed AI-powered media monitoring solutions.</li>
-                  <li>Optimized PostgreSQL queries and Elasticsearch indexing.</li>
+                  <li>Designed REST APIs and developed scalable backend services.</li>
+                  <li>Integrated OpenAI APIs into enterprise solutions and built prompt generation services.</li>
+                  <li>Worked with Kafka and AWS SQS for event-driven architectures.</li>
                   <li>Managed Docker deployments and Jenkins CI/CD pipelines.</li>
-                  <li>Participated in architecture discussions, sprint planning and code reviews.</li>
-                  <li>Mentored junior developers and collaborated with cross-functional teams.</li>
                 </ul>
               </details>
 
-              <div class="featured-projects">
-                <h5>Featured Projects</h5>
-                <ul>
-                  <li><strong>AI-Powered Media Monitoring Platform</strong> — Integrated OpenAI for intelligent media analysis. Built prompt generation services and processed large volumes of media content.</li>
-                  <li><strong>Retail POS Backend Platform</strong> — Developed scalable backend APIs and microservices for retail operations.</li>
-                </ul>
-              </div>
-
-              <div class="achievements">
-                <h5>Achievements</h5>
-                <ul>
-                  <li>7+ years of professional backend development.</li>
-                  <li>Built and maintained enterprise-grade REST APIs.</li>
-                  <li>Developed scalable microservice-based applications.</li>
-                  <li>Delivered multiple production systems with AI integrations and cloud technologies.</li>
-                </ul>
-              </div>
-
             </div>
           </article>
 
@@ -297,58 +284,78 @@
       </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="technical-expertise" class="section technical-expertise" aria-labelledby="tech-title">
       <div class="container">
-        <h3 class="section-title">Featured Projects</h3>
+        <h3 id="tech-title" class="section-title">Technical Expertise</h3>
+        <div class="expertise-grid">
+          <div class="expertise-card"><h4>REST API Development</h4><p>Designing versioned, secure and high-performance REST APIs with pagination, caching and observability.</p></div>
+          <div class="expertise-card"><h4>Microservices Architecture</h4><p>Building decoupled services with clear contracts, messaging, retries and idempotency.</p></div>
+          <div class="expertise-card"><h4>Cloud Native Development</h4><p>Production-grade deployments on AWS with containerization, monitoring and cost-aware design.</p></div>
+          <div class="expertise-card"><h4>Distributed Systems</h4><p>Design for consistency, availability, partition tolerance and scaling strategies.</p></div>
+          <div class="expertise-card"><h4>AI Integration</h4><p>Integrating OpenAI and other ML services to add intelligent features while ensuring prompt and cost controls.</p></div>
+          <div class="expertise-card"><h4>Performance Optimization</h4><p>Profiling, query optimization and caching strategies to reduce latency under load.</p></div>
+          <div class="expertise-card"><h4>Backend System Design</h4><p>Architecting systems for observability, maintainability and operational simplicity.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h3 id="projects-title" class="section-title">Featured Projects</h3>
         <div class="projects-grid">
+
           <article class="project-card">
-            <div class="project-media" role="img" aria-label="AI Powered Media Analysis"></div>
+            <img class="project-illus" src="/img/projects/telecom.svg" alt="Enterprise Telecom architecture" loading="lazy">
             <div class="project-body">
-              <h4>AI Powered Media Analysis Platform</h4>
-              <p>Media ingestion, automated analysis using OpenAI models, scalable processing and event-driven architecture.</p>
-              <div class="tech">Python • FastAPI • OpenAI • AWS • SQS</div>
-              <div class="project-actions"><a class="btn small" href="#">GitHub</a><a class="btn small outline" href="#">Live Demo</a></div>
+              <h4>Enterprise Telecom Backend Platform</h4>
+              <p class="project-problem"><strong>Business problem:</strong> Telecom network planning requires scalable, reliable backend services to process RF data and provide real-time planning insights.</p>
+              <p class="project-solution"><strong>Solution:</strong> Built microservices-based platform with FastAPI services, event-driven processing, and resilient storage to support large-scale RF processing.</p>
+              <div class="tech">Python • FastAPI • Docker • PostgreSQL • AWS • Microservices</div>
+              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-media" role="img" aria-label="Retail POS Backend"></div>
+            <img class="project-illus" src="/img/projects/ai-media.svg" alt="AI Media Analysis illustration" loading="lazy">
+            <div class="project-body">
+              <h4>AI Media Monitoring Platform</h4>
+              <p class="project-problem"><strong>Business problem:</strong> Automating media analysis to extract insights from high-volume media streams.</p>
+              <p class="project-solution"><strong>Solution:</strong> Integrated OpenAI models for content understanding, built prompt generation services and scalable worker pipelines using SQS.</p>
+              <div class="tech">Python • FastAPI • OpenAI • Amazon SQS • AWS</div>
+              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-illus" src="/img/projects/retail.svg" alt="Retail POS architecture" loading="lazy">
             <div class="project-body">
               <h4>Retail POS Backend Platform</h4>
-              <p>Microservices-based POS backend, resilient transactions, and strong data integrity with PostgreSQL.</p>
-              <div class="tech">Python • Microservices • PostgreSQL</div>
-              <div class="project-actions"><a class="btn small" href="#">GitHub</a><a class="btn small outline" href="#">Live Demo</a></div>
+              <p class="project-problem"><strong>Business problem:</strong> Reliable transaction processing and inventory management for retail chains.</p>
+              <p class="project-solution"><strong>Solution:</strong> Designed microservices for inventory, orders and payments with strong consistency and idempotent operations.</p>
+              <div class="tech">Python • Microservices • PostgreSQL • Docker</div>
+              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-media" role="img" aria-label="Backend API Platform"></div>
-            <div class="project-body">
-              <h4>Backend API Platform</h4>
-              <p>Robust API platform with FastAPI, containerization, CI/CD, and observability best practices.</p>
-              <div class="tech">FastAPI • Docker • AWS</div>
-              <div class="project-actions"><a class="btn small" href="#">GitHub</a><a class="btn small outline" href="#">Live Demo</a></div>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
-    <section id="achievements" class="section achievements">
+    <section id="achievements" class="section achievements" aria-labelledby="achieve-title">
       <div class="container">
-        <h3 class="section-title">Achievements</h3>
+        <h3 id="achieve-title" class="section-title">Highlights</h3>
         <div class="counters">
           <div class="counter"><h4 class="num" data-target="7">0</h4><p>Years Experience</p></div>
-          <div class="counter"><h4 class="num" data-target="100">0</h4><p>APIs Built</p></div>
-          <div class="counter"><h4 class="num" data-target="50">0</h4><p>Backend Services</p></div>
-          <div class="counter"><h4 class="num" data-target="1000000">0</h4><p>Records Processed</p></div>
+          <div class="counter"><h4 class="num" data-target="0">0</h4><p>Enterprise Telecom Projects</p></div>
+          <div class="counter"><h4 class="num" data-target="0">0</h4><p>Cloud Native Development</p></div>
+          <div class="counter"><h4 class="num" data-target="0">0</h4><p>AI Integration</p></div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="container">
-        <h3 class="section-title">Contact</h3>
+        <h3 id="contact-title" class="section-title">Contact</h3>
         <div class="contact-grid">
           <form id="contact-form" action="https://formspree.io/f/yourFormId" method="POST" class="contact-form" aria-label="Contact form">
             <label><span>Name</span><input type="text" name="name" required></label>
@@ -359,9 +366,17 @@
           </form>
 
           <aside class="contact-info">
-            <div class="contact-item"><strong>Email</strong><a href="mailto:pranalithorve@gmail.com">pranalithorve@gmail.com</a></div>
-            <div class="contact-item"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/pranali-thorve-800824184/">pranali-thorve-800824184</a></div>
-            <div class="contact-item"><strong>GitHub</strong><a href="https://github.com/pranalithorve">@pranalithorve</a></div>
+            <div class="contact-item"><strong>Email</strong><a id="mailto-link" href="mailto:pranalithorve@gmail.com">pranalithorve@gmail.com</a></div>
+            <div class="contact-item"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">pranali-thorve-800824184</a></div>
+            <div class="contact-item"><strong>GitHub</strong><a href="https://github.com/pranalithorve" target="_blank" rel="noopener">@pranalithorve</a></div>
+
+            <div class="contact-actions">
+              <a class="btn small" href="/resume.pdf" download>Download Resume</a>
+              <button id="copy-email-2" class="btn small outline">Copy Email</button>
+              <a class="btn small outline" href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn small outline" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a>
+            </div>
+
           </aside>
         </div>
       </div>
@@ -369,10 +384,10 @@
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <p>© Pranali Thorve — Senior Python Backend Developer</p>
-      <div class="social"><a href="https://github.com/pranalithorve">GitHub</a><a href="https://www.linkedin.com/in/pranali-thorve-800824184/">LinkedIn</a></div>
+      <p>© Pranali Thorve — Senior Python Backend Engineer — Mumbai, India</p>
+      <div class="social"><a href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
   </footer>
 
