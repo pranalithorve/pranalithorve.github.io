@@ -1,15 +1,25 @@
-# Portfolio Website
+# Premium Portfolio for Pranali Thorve
 
-This commit adds a modern, dark-themed, responsive personal portfolio site for a Python Backend Developer.
+This branch adds a premium, production-ready static portfolio for Pranali Thorve with:
 
-Files added:
+- Premium UI inspired by Apple/Linear/Vercel/Stripe
+- Dark mode by default, glassmorphism, aurora gradient, particles
+- Animated typing, counters, timeline, smooth scrolling, progress bar
+- SEO meta tags, structured data, sitemap and robots.txt
+- Lazy loading, accessibility improvements
+
+Files added/updated:
 - index.html
-- css/style.css
-- js/main.js
-- resume.md
+- css/premium.css
+- js/premium.js
+- robots.txt
+- sitemap.xml
 
-Notes / next steps:
-1. Replace the contact form action attribute in index.html with your Formspree (or other) endpoint to receive messages. Example: https://formspree.io/f/yourFormId
-2. Optionally add a PDF resume at /resume.pdf and update the Download Resume link to point to it.
-3. To publish on GitHub Pages: merge the branch `add-portfolio-site` into your repository's default branch and enable GitHub Pages for the repo (Settings → Pages).
+Notes:
+- Replace the contact form action with your Formspree or server endpoint.
+- Add resume.pdf at repository root to enable resume download.
+- Update any personal links (LinkedIn, GitHub) if necessary.
+
+To create a pull request:
+https://github.com/pranalithorve/pranalithorve.github.io/compare/premium-portfolio?expand=1
 
