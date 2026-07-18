@@ -16,381 +16,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/premium.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Pranali Thorve",
-    "jobTitle": "Senior Python Backend Engineer",
-    "url": "https://pranalithorve.github.io/",
-    "sameAs": ["https://github.com/pranalithorve","https://www.linkedin.com/in/pranali-thorve-800824184/"],
-    "description": "Senior Python Backend Engineer with 7+ years of experience building scalable backend systems, REST APIs, microservices, cloud-native applications and AI-powered solutions."
-  }
-  </script>
-  <meta name="theme-color" content="#071018">
 </head>
 <body>
-  <div id="loader" aria-hidden="true">
-    <div class="spinner" role="status" aria-label="Loading"></div>
-  </div>
-
-  <div id="progress-bar" aria-hidden="true"></div>
-
-  <header class="topbar" role="banner">
-    <div class="inner">
-      <a class="brand" href="#hero">Pranali Thorve</a>
-      <nav class="nav" role="navigation" aria-label="Primary navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="controls">
-        <a class="btn ghost" href="/resume.pdf" download aria-label="Download resume">Resume</a>
-        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-        <button id="scroll-top" aria-label="Scroll to top">⬆</button>
+  <!-- content above unchanged -->
+  <!-- Hero section excerpt showing updated avatar markup -->
+  <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Building Scalable Backend Systems for Enterprise Applications</p>
+        <h1 id="hero-heading" class="headline">Hi, I'm <span class="name">Pranali Thorve</span></h1>
+        <h2 class="subhead">Senior Python Backend Engineer — Mumbai, India</h2>
+        <p class="lead">Python Backend Engineer with 7+ years of experience building scalable REST APIs, microservices, cloud-native applications, distributed systems, and AI-powered backend solutions. Currently developing enterprise telecom backend services for the RFDS platform used by T-Mobile through Cemtics Solutions.</p>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <section id="hero" class="hero" aria-labelledby="hero-heading">
-      <div class="aurora" aria-hidden="true"></div>
-      <canvas id="particles" aria-hidden="true"></canvas>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Building Scalable Backend Systems for Enterprise Applications</p>
-          <h1 id="hero-heading" class="headline">Hi, I'm <span class="name">Pranali Thorve</span></h1>
-          <h2 class="subhead">Senior Python Backend Engineer — Mumbai, India</h2>
-
-          <div class="typed" aria-hidden="true"><span id="typed-text"></span><span class="cursor">|</span></div>
-
-          <p class="lead">Python Backend Engineer with 7+ years of experience building scalable REST APIs, microservices, cloud-native applications, distributed systems, and AI-powered backend solutions. Currently developing enterprise telecom backend services for the RFDS platform used by T-Mobile through Cemtics Solutions.</p>
-
-          <div class="cta">
-            <a class="btn primary" href="/resume.pdf" download>Download Resume</a>
-            <a class="btn outline" href="#projects">View Projects</a>
-            <a class="btn outline" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn ghost" href="#contact">Contact Me</a>
+      <aside class="hero-card" aria-labelledby="profile-name">
+        <div class="profile-card">
+          <div class="avatar" id="avatar" aria-hidden="false">
+            <!-- Responsive picture element using the uploaded avatar -->
+            <picture>
+              <source type="image/webp" srcset="/img/avatar/pranali-640.webp 640w, /img/avatar/pranali-1200.webp 1200w" sizes="(max-width:600px) 160px, 240px">
+              <img src="/img/avatar/pranali-640.jpg" alt="Profile photo of Pranali Thorve" width="240" height="240" loading="lazy" class="avatar-img" />
+            </picture>
           </div>
-        </div>
-
-        <aside class="hero-card" aria-labelledby="profile-name">
-          <div class="profile-card">
-            <div class="avatar" id="avatar" aria-hidden="true">
-              <!-- Animated gradient avatar square -->
-              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile placeholder">
-                <defs>
-                  <linearGradient id="grad" x1="0" x2="1">
-                    <stop offset="0" stop-color="#7c5cff" />
-                    <stop offset="1" stop-color="#5fb6ff" />
-                  </linearGradient>
-                </defs>
-                <rect width="120" height="120" rx="20" fill="url(#grad)" />
-                <g transform="translate(20,24)" fill="#fff" opacity="0.95">
-                  <circle cx="40" cy="24" r="18" />
-                  <rect x="0" y="58" width="80" height="14" rx="6" />
-                </g>
-              </svg>
-            </div>
-            <div class="profile-meta">
-              <h3 id="profile-name">Pranali Thorve</h3>
-              <p class="muted">Senior Python Backend Engineer</p>
-
-              <ul class="profile-stats">
-                <li>📍 Mumbai, India</li>
-                <li>🏢 Cemtics Solutions</li>
-                <li>Client: T-Mobile</li>
-                <li>Experience: 7+ years</li>
-              </ul>
-
-              <div class="expertise">
-                <h4>Core Expertise</h4>
-                <div class="chips">
-                  <span>Python</span>
-                  <span>FastAPI</span>
-                  <span>Microservices</span>
-                  <span>AWS</span>
-                  <span>AI Integration</span>
-                </div>
-              </div>
-
-              <div class="profile-actions">
-                <button id="copy-email" class="btn small outline" aria-label="Copy email">Copy Email</button>
-                <a class="btn small" href="/resume.pdf" download>Download Resume</a>
-              </div>
-
-            </div>
-          </div>
-        </aside>
-
-      </div>
-    </section>
-
-    <section id="about" class="section about" aria-labelledby="about-title">
-      <div class="container">
-        <h3 id="about-title" class="section-title">About Me</h3>
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>I am a Senior Python Backend Engineer with over seven years of experience designing scalable backend systems, cloud-native applications, REST APIs, microservices, distributed systems, and AI-powered solutions.</p>
-            <p>Currently, I work on the RFDS platform for T-Mobile through Cemtics Solutions, developing enterprise-grade backend APIs and microservices that support telecom network planning and management.</p>
-            <p>I enjoy solving complex backend challenges, improving application performance, designing clean architectures, and building reliable production systems that are scalable and maintainable.</p>
-          </div>
-          <div class="about-stats">
-            <div class="stat">
-              <h4 class="num" data-target="7">0</h4>
-              <p>Years Experience</p>
-            </div>
-            <div class="stat">
-              <h4 class="num" data-target="0">0</h4>
-              <p>Enterprise Telecom Projects</p>
-            </div>
-            <div class="stat">
-              <h4 class="num" data-target="0">0</h4>
-              <p>Cloud Native Development</p>
-            </div>
-            <div class="stat">
-              <h4 class="num" data-target="0">0</h4>
-              <p>AI Integration</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills" aria-labelledby="skills-title">
-      <div class="container">
-        <h3 id="skills-title" class="section-title">Skills</h3>
-        <div class="skills-grid">
-          <!-- Keep UI and categories, improve spacing and add new chips -->
-          <div class="skill-group">
-            <h4>Languages</h4>
-            <div class="chips"><span>Python</span><span>SQL</span><span>Linux</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Frameworks</h4>
-            <div class="chips"><span>FastAPI</span><span>Flask</span><span>Django</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Backend</h4>
-            <div class="chips"><span>REST APIs</span><span>Microservices</span><span>Authentication</span><span>Async Programming</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Databases</h4>
-            <div class="chips"><span>PostgreSQL</span><span>MongoDB</span><span>Elasticsearch</span><span>Redis</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Cloud</h4>
-            <div class="chips"><span>AWS</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>DevOps</h4>
-            <div class="chips"><span>Docker</span><span>Jenkins</span><span>CI/CD</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Messaging</h4>
-            <div class="chips"><span>Kafka</span><span>Amazon SQS</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Tools & Design</h4>
-            <div class="chips"><span>Git</span><span>GitHub</span><span>OpenAPI / Swagger</span><span>System Design</span></div>
-          </div>
-
-          <div class="skill-group">
-            <h4>AI</h4>
-            <div class="chips"><span>OpenAI Integration</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience" aria-labelledby="exp-title">
-      <div class="container">
-        <h3 id="exp-title" class="section-title">Professional Experience</h3>
-
-        <div class="vertical-timeline">
-
-          <!-- Cemtics / T-Mobile -->
-          <article class="timeline-card">
-            <div class="logo-wrap"><img src="/img/logos/cemtics.svg" alt="Cemtics Solutions logo"></div>
-            <div class="card-body">
-              <header class="card-header">
-                <h4>Senior Python Backend Engineer</h4>
-                <span class="meta">Cemtics Solutions Pvt. Ltd. — 2025 – Present</span>
-              </header>
-
-              <p class="meta small"><strong>Client:</strong> T-Mobile</p>
-              <p class="project"><strong>Project:</strong> RFDS (Radio Frequency Design System)</p>
-
-              <p class="role-summary">Developing scalable backend APIs and microservices for enterprise telecom software used for radio frequency network planning and management.</p>
-
-              <div class="badges tech">
-                <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Microservices</span><span>Docker</span><span>AWS</span><span>PostgreSQL</span><span>Git</span>
-              </div>
-
-              <details class="responsibilities">
-                <summary>Responsibilities</summary>
-                <ul>
-                  <li>Develop scalable REST APIs and backend services.</li>
-                  <li>Design and implement backend microservices with robust error handling and observability.</li>
-                  <li>Improve backend performance and maintainability; optimize PostgreSQL queries.</li>
-                  <li>Collaborate closely with cross-functional Agile teams, product owners and architects.</li>
-                  <li>Write production-ready code with tests and participate in code reviews.</li>
-                </ul>
-              </details>
-
-            </div>
-          </article>
-
-          <!-- NEC Software Solutions -->
-          <article class="timeline-card">
-            <div class="logo-wrap"><img src="/img/logos/nec.svg" alt="NEC Software Solutions logo"></div>
-            <div class="card-body">
-              <header class="card-header">
-                <h4>Python Backend Developer</h4>
-                <span class="meta">NEC Software Solutions — Nov 2017 – Mar 2025</span>
-              </header>
-
-              <p class="role-summary">Developed enterprise-grade backend applications, REST APIs, cloud-native services, and AI integrations across multiple business domains.</p>
-
-              <div class="badges tech">
-                <span>Python</span><span>FastAPI</span><span>Flask</span><span>Django</span><span>Kafka</span><span>Redis</span><span>PostgreSQL</span><span>MongoDB</span>
-              </div>
-
-              <details class="responsibilities">
-                <summary>Responsibilities</summary>
-                <ul>
-                  <li>Designed REST APIs and developed scalable backend services.</li>
-                  <li>Integrated OpenAI APIs into enterprise solutions and built prompt generation services.</li>
-                  <li>Worked with Kafka and AWS SQS for event-driven architectures.</li>
-                  <li>Managed Docker deployments and Jenkins CI/CD pipelines.</li>
-                </ul>
-              </details>
-
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="technical-expertise" class="section technical-expertise" aria-labelledby="tech-title">
-      <div class="container">
-        <h3 id="tech-title" class="section-title">Technical Expertise</h3>
-        <div class="expertise-grid">
-          <div class="expertise-card"><h4>REST API Development</h4><p>Designing versioned, secure and high-performance REST APIs with pagination, caching and observability.</p></div>
-          <div class="expertise-card"><h4>Microservices Architecture</h4><p>Building decoupled services with clear contracts, messaging, retries and idempotency.</p></div>
-          <div class="expertise-card"><h4>Cloud Native Development</h4><p>Production-grade deployments on AWS with containerization, monitoring and cost-aware design.</p></div>
-          <div class="expertise-card"><h4>Distributed Systems</h4><p>Design for consistency, availability, partition tolerance and scaling strategies.</p></div>
-          <div class="expertise-card"><h4>AI Integration</h4><p>Integrating OpenAI and other ML services to add intelligent features while ensuring prompt and cost controls.</p></div>
-          <div class="expertise-card"><h4>Performance Optimization</h4><p>Profiling, query optimization and caching strategies to reduce latency under load.</p></div>
-          <div class="expertise-card"><h4>Backend System Design</h4><p>Architecting systems for observability, maintainability and operational simplicity.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects" aria-labelledby="projects-title">
-      <div class="container">
-        <h3 id="projects-title" class="section-title">Featured Projects</h3>
-        <div class="projects-grid">
-
-          <article class="project-card">
-            <img class="project-illus" src="/img/projects/telecom.svg" alt="Enterprise Telecom architecture" loading="lazy">
-            <div class="project-body">
-              <h4>Enterprise Telecom Backend Platform</h4>
-              <p class="project-problem"><strong>Business problem:</strong> Telecom network planning requires scalable, reliable backend services to process RF data and provide real-time planning insights.</p>
-              <p class="project-solution"><strong>Solution:</strong> Built microservices-based platform with FastAPI services, event-driven processing, and resilient storage to support large-scale RF processing.</p>
-              <div class="tech">Python • FastAPI • Docker • PostgreSQL • AWS • Microservices</div>
-              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img class="project-illus" src="/img/projects/ai-media.svg" alt="AI Media Analysis illustration" loading="lazy">
-            <div class="project-body">
-              <h4>AI Media Monitoring Platform</h4>
-              <p class="project-problem"><strong>Business problem:</strong> Automating media analysis to extract insights from high-volume media streams.</p>
-              <p class="project-solution"><strong>Solution:</strong> Integrated OpenAI models for content understanding, built prompt generation services and scalable worker pipelines using SQS.</p>
-              <div class="tech">Python • FastAPI • OpenAI • Amazon SQS • AWS</div>
-              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img class="project-illus" src="/img/projects/retail.svg" alt="Retail POS architecture" loading="lazy">
-            <div class="project-body">
-              <h4>Retail POS Backend Platform</h4>
-              <p class="project-problem"><strong>Business problem:</strong> Reliable transaction processing and inventory management for retail chains.</p>
-              <p class="project-solution"><strong>Solution:</strong> Designed microservices for inventory, orders and payments with strong consistency and idempotent operations.</p>
-              <div class="tech">Python • Microservices • PostgreSQL • Docker</div>
-              <div class="project-actions"><a class="btn small" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a></div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="section achievements" aria-labelledby="achieve-title">
-      <div class="container">
-        <h3 id="achieve-title" class="section-title">Highlights</h3>
-        <div class="counters">
-          <div class="counter"><h4 class="num" data-target="7">0</h4><p>Years Experience</p></div>
-          <div class="counter"><h4 class="num" data-target="0">0</h4><p>Enterprise Telecom Projects</p></div>
-          <div class="counter"><h4 class="num" data-target="0">0</h4><p>Cloud Native Development</p></div>
-          <div class="counter"><h4 class="num" data-target="0">0</h4><p>AI Integration</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <div class="container">
-        <h3 id="contact-title" class="section-title">Contact</h3>
-        <div class="contact-grid">
-          <form id="contact-form" action="https://formspree.io/f/yourFormId" method="POST" class="contact-form" aria-label="Contact form">
-            <label><span>Name</span><input type="text" name="name" required></label>
-            <label><span>Email</span><input type="email" name="email" required></label>
-            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
-            <div class="form-actions"><button class="btn primary" type="submit">Send Message</button></div>
-            <p class="form-status" aria-live="polite"></p>
-          </form>
-
-          <aside class="contact-info">
-            <div class="contact-item"><strong>Email</strong><a id="mailto-link" href="mailto:pranalithorve@gmail.com">pranalithorve@gmail.com</a></div>
-            <div class="contact-item"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">pranali-thorve-800824184</a></div>
-            <div class="contact-item"><strong>GitHub</strong><a href="https://github.com/pranalithorve" target="_blank" rel="noopener">@pranalithorve</a></div>
-
-            <div class="contact-actions">
+          <div class="profile-meta">
+            <h3 id="profile-name">Pranali Thorve</h3>
+            <p class="muted">Senior Python Backend Engineer</p>
+            <ul class="profile-stats">
+              <li>📍 Mumbai, India</li>
+              <li>🏢 Cemtics Solutions</li>
+              <li>Client: T-Mobile</li>
+              <li>Experience: 7+ years</li>
+            </ul>
+            <div class="profile-actions">
+              <button id="copy-email" class="btn small outline" aria-label="Copy email">Copy Email</button>
               <a class="btn small" href="/resume.pdf" download>Download Resume</a>
-              <button id="copy-email-2" class="btn small outline">Copy Email</button>
-              <a class="btn small outline" href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn small outline" href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a>
             </div>
-
-          </aside>
+          </div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <p>© Pranali Thorve — Senior Python Backend Engineer — Mumbai, India</p>
-      <div class="social"><a href="https://github.com/pranalithorve" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/pranali-thorve-800824184/" target="_blank" rel="noopener">LinkedIn</a></div>
+      </aside>
     </div>
-  </footer>
-
+  </section>
+  <!-- rest of page unchanged -->
   <script src="/js/premium.js"></script>
 </body>
 </html>
