@@ -51,6 +51,7 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helveti
 .hero-card{display:flex;align-items:center;justify-content:center}
 .profile-card{width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:1rem;border-radius:var(--radius);backdrop-filter:blur(8px);border:1px solid var(--glass-border);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
 .avatar{width:120px;height:120px;margin:0 auto;border-radius:12px;overflow:hidden}
+.avatar-img{width:100%;height:100%;object-fit:cover;display:block}
 .profile-meta{text-align:left;padding-top:0.6rem}
 .profile-meta h3{margin:0.2rem 0 0}
 .muted{color:var(--muted);margin:0.2rem 0 0.8rem}
@@ -108,5 +109,34 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helveti
 .project-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,0.6)}
 .btn:hover{transform:translateY(-2px)}
 /* Responsive */
-@media(max-width:980px){.hero-inner{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.counters{grid-template-columns:repeat(2,1fr)} .expertise-grid{grid-template-columns:repeat(2,1fr)} }
-@media(max-width:560px){.skills-grid{grid-template-columns:1fr}.projects-grid{grid-template-columns:1fr}.counters{grid-template-columns:1fr}.container{padding:1rem}}
+@media(max-width:980px){
+  .hero-inner{grid-template-columns:1fr !important}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+  .counters{grid-template-columns:repeat(2,1fr)}
+  .expertise-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .skills-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .counters{grid-template-columns:1fr}
+  .container{padding:1rem}
+}
+
+/* Fixes for hero layout on small devices: ensure avatar/profile card is visible and not pushed off-screen */
+@media (max-width:720px){
+  .hero-inner{display:block;padding:0 1rem}
+  .hero-copy{width:100%;}
+  .hero-card{margin-top:1.2rem;display:block}
+  .profile-card{display:flex;gap:0.8rem;align-items:center}
+  .avatar{width:96px;height:96px;flex:0 0 96px}
+  .profile-meta{padding-top:0}
+  .lead{max-width:100%}
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce){
+  .section, .timeline-card, .project-card, .expertise-card, .profile-card{transition:none;animation:none}
+  .spinner{animation:none}
+}
