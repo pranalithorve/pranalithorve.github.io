@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://pranalithorve.github.io/sitemap.xml
