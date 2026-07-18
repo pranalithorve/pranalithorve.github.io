@@ -1,12 +1,8 @@
-Updated Professional Experience timeline and replaced contact email with pranalithorve@gmail.com.
+Updated contact email to pranalithorve@gmail.com and LinkedIn URL to https://www.linkedin.com/in/pranali-thorve-800824184/ across the site.
 
 Files updated:
-- index.html (experience section replaced with premium animated timeline for Cemtics/NEC)
-- js/premium.js (contact fallback email updated)
-- img/logos/cemtics.svg, img/logos/nec.svg (logo placeholders)
-- robots.txt, sitemap.xml (re-written to ensure latest)
+- index.html (contact links, structured data, footer)
+- js/premium.js (contact fallback message)
+- README.md (note updated)
 
-Next steps:
-- Add resume.pdf at repo root to enable resume download.
-- Update the Formspree action in the contact form.
-
+Committed to branch: premium-portfolio
