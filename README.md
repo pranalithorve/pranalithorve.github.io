@@ -1,3 +1,1 @@
-Updated contact details, refined copy for hero, about, skills, experience, projects and added Technical Expertise section. Improved accessibility, active nav highlighting, copy-email functionality, refined CSS spacing and animations.
-
-Committed to branch: premium-portfolio
+Updated mobile CSS to ensure hero layout displays the profile card on small screens and prevent off-screen column overflow. Added refined responsive rules and reduced-motion support.
