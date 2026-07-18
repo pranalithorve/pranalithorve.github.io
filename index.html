@@ -18,21 +18,57 @@
   <link rel="stylesheet" href="/css/premium.css" />
 </head>
 <body>
-  <!-- content above unchanged -->
-  <!-- Hero section excerpt showing updated avatar markup -->
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Navigation -->
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar inner">
+        <a href="#hero" class="brand">Pranali Thorve</a>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="controls">
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <button id="scroll-top" aria-label="Scroll to top">↑</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
   <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <div class="aurora"></div>
+    <canvas id="particles"></canvas>
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">Building Scalable Backend Systems for Enterprise Applications</p>
         <h1 id="hero-heading" class="headline">Hi, I'm <span class="name">Pranali Thorve</span></h1>
         <h2 class="subhead">Senior Python Backend Engineer — Mumbai, India</h2>
-        <p class="lead">Python Backend Engineer with 7+ years of experience building scalable REST APIs, microservices, cloud-native applications, distributed systems, and AI-powered backend solutions. Currently developing enterprise telecom backend services for the RFDS platform used by T-Mobile through Cemtics Solutions.</p>
+        <p class="lead">Python Backend Engineer with 7+ years of experience building scalable REST APIs, microservices, cloud-native applications, distributed systems, and AI-powered backend solutions. Currently at Cemtics Solutions working with T-Mobile.</p>
+        <div class="typed-container">
+          <p class="typed">Specializing in: <span id="typed-text">Scalable Backend Systems</span></p>
+        </div>
+        <div class="cta">
+          <button id="copy-email-cta" class="btn primary" aria-label="Copy email">📧 Get In Touch</button>
+          <a href="#projects" class="btn outline">View My Work</a>
+        </div>
       </div>
 
       <aside class="hero-card" aria-labelledby="profile-name">
         <div class="profile-card">
           <div class="avatar" id="avatar" aria-hidden="false">
-            <!-- Responsive picture element using the uploaded avatar -->
             <picture>
               <source type="image/webp" srcset="/img/avatar/pranali-640.webp 640w, /img/avatar/pranali-1200.webp 1200w" sizes="(max-width:600px) 160px, 240px">
               <img src="/img/avatar/pranali-640.jpg" alt="Profile photo of Pranali Thorve" width="240" height="240" loading="lazy" class="avatar-img" />
@@ -56,7 +92,290 @@
       </aside>
     </div>
   </section>
-  <!-- rest of page unchanged -->
+
+  <!-- About section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a passionate backend engineer with a deep focus on building robust, scalable systems that power enterprise applications. With 7+ years in the industry, I've worked across multiple domains including e-commerce, HR systems, and real-time platforms.</p>
+          <p>My expertise spans:</p>
+          <ul>
+            <li><strong>Backend Frameworks:</strong> FastAPI, Django, Flask</li>
+            <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD</li>
+            <li><strong>Databases:</strong> PostgreSQL, MongoDB, Redis</li>
+            <li><strong>Architecture:</strong> Microservices, REST APIs, Event-Driven Systems</li>
+            <li><strong>AI/ML Integration:</strong> LLM APIs, Vector Databases, ML Model Serving</li>
+          </ul>
+          <p>I'm committed to writing clean, maintainable code and following best practices in software engineering. I love mentoring junior developers and sharing knowledge with the community.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3 class="num" data-target="7">7</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3 class="num" data-target="50">50</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat">
+            <h3 class="num" data-target="100">100</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="vertical-timeline">
+        
+        <div class="timeline-card">
+          <div class="card-body">
+            <div class="card-header">
+              <div>
+                <h3>Senior Python Backend Engineer</h3>
+                <p class="meta">Cemtics Solutions • Current</p>
+              </div>
+              <span class="meta">2024 - Present</span>
+            </div>
+            <p>Leading backend architecture and development for T-Mobile's enterprise systems. Designing and implementing scalable microservices, optimizing database queries, and mentoring junior engineers.</p>
+            <div class="badges tech">
+              <span>FastAPI</span>
+              <span>AWS</span>
+              <span>PostgreSQL</span>
+              <span>Kubernetes</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="card-body">
+            <div class="card-header">
+              <div>
+                <h3>Backend Engineer</h3>
+                <p class="meta">Previous Organization</p>
+              </div>
+              <span class="meta">2019 - 2024</span>
+            </div>
+            <p>Developed and maintained multiple Django and Flask applications. Implemented REST APIs, real-time features using WebSockets, and database optimization. Improved API response times by 40%.</p>
+            <div class="badges tech">
+              <span>Django</span>
+              <span>Flask</span>
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="card-body">
+            <div class="card-header">
+              <div>
+                <h3>Junior Backend Developer</h3>
+                <p class="meta">Starting Role</p>
+              </div>
+              <span class="meta">2018 - 2019</span>
+            </div>
+            <p>Started career building REST APIs with Python. Learned best practices in code quality, testing, and deployment. Contributed to multiple microservices migration projects.</p>
+            <div class="badges tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Backend Languages</h3>
+          <div class="chips">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <div class="chips">
+            <span>FastAPI</span>
+            <span>Django</span>
+            <span>Flask</span>
+            <span>Celery</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud & DevOps</h3>
+          <div class="chips">
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>CI/CD</span>
+            <span>GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="chips">
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+            <span>Elasticsearch</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Architecture</h3>
+          <div class="chips">
+            <span>Microservices</span>
+            <span>REST APIs</span>
+            <span>Event-Driven</span>
+            <span>System Design</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>AI/ML Integration</h3>
+          <div class="chips">
+            <span>LLM APIs</span>
+            <span>Vector DB</span>
+            <span>RAG Systems</span>
+            <span>Embeddings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x160?text=E-Commerce+Platform" alt="E-Commerce Platform" class="project-illus" loading="lazy">
+          <div class="project-body">
+            <h3>E-Commerce Platform</h3>
+            <p class="project-problem">Built scalable backend for multi-vendor e-commerce with Django</p>
+            <p class="project-solution">Implemented product catalog, shopping cart, order management, and payment integration</p>
+            <p class="tech">Django • PostgreSQL • Celery • Stripe API</p>
+            <div class="project-actions">
+              <a href="https://github.com/pranalithorve/ecommerce" class="btn small ghost" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x160?text=HR+Management+System" alt="HR Management System" class="project-illus" loading="lazy">
+          <div class="project-body">
+            <h3>HR Management System</h3>
+            <p class="project-problem">Manage employee overtime and salary calculations</p>
+            <p class="project-solution">Automated leave calculation, salary slip generation, and overtime tracking</p>
+            <p class="tech">Python • Django • PostgreSQL</p>
+            <div class="project-actions">
+              <a href="https://github.com/pranalithorve/HR-Overtime" class="btn small ghost" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x160?text=Task+Management+App" alt="Task Management" class="project-illus" loading="lazy">
+          <div class="project-body">
+            <h3>Task Management Application</h3>
+            <p class="project-problem">Real-time task tracking and team collaboration</p>
+            <p class="project-solution">Built with FastAPI and Vue.js for seamless task management and notifications</p>
+            <p class="tech">FastAPI • WebSockets • PostgreSQL • Vue.js</p>
+            <div class="project-actions">
+              <a href="https://github.com/pranalithorve/task_management" class="btn small ghost" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <div class="counters">
+        <div class="counter">
+          <h3 class="num" data-target="7">0</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="counter">
+          <h3 class="num" data-target="50">0</h3>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="counter">
+          <h3 class="num" data-target="15">0</h3>
+          <p>Team Members Mentored</p>
+        </div>
+        <div class="counter">
+          <h3 class="num" data-target="99">0</h3>
+          <p>Client Satisfaction %</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="form-status"></p>
+        </form>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> pranalithorve@gmail.com</p>
+          <p><strong>Location:</strong> Mumbai, India</p>
+          <p><strong>Company:</strong> Cemtics Solutions</p>
+          <div class="profile-actions">
+            <button id="copy-email-2" class="btn small outline" aria-label="Copy email">Copy Email</button>
+            <a href="https://github.com/pranalithorve" class="btn small outline" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/pranalithorve" class="btn small outline" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Pranali Thorve. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="/js/premium.js"></script>
 </body>
 </html>
