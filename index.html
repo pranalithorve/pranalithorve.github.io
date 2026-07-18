@@ -16,6 +16,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/premium.css" />
+  <style>
+    .avatar {
+      background: linear-gradient(135deg, #7c5cff 0%, #5fb6ff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: #fff;
+      font-weight: 800;
+    }
+    .avatar-img {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -71,10 +85,7 @@
       <aside class="hero-card" aria-labelledby="profile-name">
         <div class="profile-card">
           <div class="avatar" id="avatar" aria-hidden="false">
-            <picture>
-              <source type="image/webp" srcset="/img/avatar/pranali-640.webp 640w, /img/avatar/pranali-1200.webp 1200w" sizes="(max-width:600px) 160px, 240px">
-              <img src="/img/avatar/pranali-640.jpg" alt="Profile photo of Pranali Thorve" width="240" height="240" loading="lazy" class="avatar-img" />
-            </picture>
+            <span>PT</span>
           </div>
           <div class="profile-meta">
             <h3 id="profile-name">Pranali Thorve</h3>
